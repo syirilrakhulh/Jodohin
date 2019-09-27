@@ -4,6 +4,41 @@
   font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
 }
 
+.main-button {
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 97vh;
+}
+.main-button .skewBtn {
+  width: 200px;
+  height: 60px;
+  outline: none;
+  cursor: pointer;
+  background: none;
+  transition: 0.5s;
+  font-size: 18px;
+  border-radius: 5px;
+  font-family: "Lato", sans-serif;
+}
+.main-button .skewBtn:hover {
+  border: none;
+  color: white;
+  font-size: 22px;
+  transform: scale(1.1);
+}
+/* Buttons */
+.black {
+  border: 2px solid #a49c9d;
+  color: #a49c9d;
+}
+.black:hover {
+  background-color: #a49c9d;
+  transition: all 0.3s ease-in-out;
+}
+
 #main-page {
   background-image: url(bg-main.jpg);
   background-size: cover;
@@ -26,7 +61,7 @@
 }
 
 #main-page button {
-  /* padding-left: 1.5em; */
+  padding-left: 1.5em;
 }
 
 #game-page {
@@ -93,3 +128,4 @@
 .footer .kanan p {
   padding: 0 30px 0 30px;
 }
+/* ================================================= */
