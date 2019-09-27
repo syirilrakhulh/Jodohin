@@ -6,27 +6,28 @@
 
 .main-button {
   display: flex;
-  text-align: center;
-  justify-content: space-evenly;
-  align-items: center;
+  /* text-align: center; */
+  /* justify-content: space-evenly; */
   flex-wrap: wrap;
+  padding: 0 4em;
+  grid-template-columns: 40% auto;
   height: 97vh;
 }
 .main-button .skewBtn {
-  width: 200px;
-  height: 60px;
+  width: 180px;
+  height: 50px;
   outline: none;
   cursor: pointer;
   background: none;
   transition: 0.5s;
-  font-size: 18px;
+  font-size: 16px;
   border-radius: 5px;
   font-family: "Lato", sans-serif;
 }
 .main-button .skewBtn:hover {
   border: none;
   color: white;
-  font-size: 22px;
+  font-size: 18px;
   transform: scale(1.1);
 }
 /* Buttons */
@@ -60,9 +61,9 @@
   width: 100px; */
 }
 
-#main-page button {
+/* #main-page button {
   padding-left: 1.5em;
-}
+} */
 
 #game-page {
   /* max-height: 590px; */
@@ -94,9 +95,9 @@
   margin: 20px 40px;
 }
 
-#inputan button {
+/* #inputan button {
   margin: 20px 40px;
-}
+} */
 
 #inputan form {
   margin: 20px 40px;
@@ -129,3 +130,42 @@
   padding: 0 30px 0 30px;
 }
 /* ================================================= */
+
+.game-button {
+  display: flex;
+  /* text-align: center; */
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 0 4em;
+  /* grid-template-columns: 40% auto; */
+  height: 97vh;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.game-button .skewBtn {
+  width: 180px;
+  height: 50px;
+  outline: none;
+  cursor: pointer;
+  background: none;
+  transition: 0.5s;
+  font-size: 16px;
+  border-radius: 5px;
+  font-family: "Lato", sans-serif;
+}
+.game-button .skewBtn:hover {
+  border: none;
+  color: white;
+  font-size: 18px;
+  transform: scale(1.1);
+}
+/* Buttons */
+.black {
+  border: 2px solid #a49c9d;
+  color: #a49c9d;
+}
+.black:hover {
+  background-color: #a49c9d;
+  transition: all 0.3s ease-in-out;
+}
