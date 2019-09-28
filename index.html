@@ -5,6 +5,7 @@
       Jodohin! Cek Berapa Persen Kadar Jodohmu!
     </title>
     <link rel="stylesheet" type="text/css" href="main-page.css" />
+    <script src="formula.js"></script>
   </head>
   <body>
     <div id="main-page">
@@ -14,7 +15,9 @@
         Jodohin!
       </p>
       <div class="main-button">
-        <button class="skewBtn black">Jodohin! Sekarang</button>
+        <button class="skewBtn black">
+          <a href="#game-page">Jodohin! Sekarang</a>
+        </button>
       </div>
     </div>
     <div id="game-page">
@@ -29,15 +32,15 @@
           </p>
         </form> -->
         <!-- ============================== -->
-        <label for="inp" class="inp">
-          <input type="text" id="inp" placeholder="&nbsp;" />
+        <label for="male" class="male">
+          <input type="text" id="male" placeholder="&nbsp;" />
           <span class="label">Cowok</span>
           <span class="border"></span>
         </label>
         <!-- ============================== -->
 
         <div class="game-button">
-          <button class="skewBtn black">Jodohin!</button>
+          <button class="skewBtn black" onclick="jodohin()">Jodohin!</button>
         </div>
 
         <!-- <form>
@@ -50,14 +53,19 @@
           </p>
         </form> -->
         <!-- ================================ -->
-        <label for="inp" class="inp">
-          <input type="text" id="inp" placeholder="&nbsp;" />
+        <label for="female" class="female">
+          <input type="text" id="female" placeholder="&nbsp;" />
           <span class="label">Cewek</span>
           <span class="border"></span>
         </label>
         <!-- ================================ -->
         <img src="female.png" class="female-img" />
       </div>
+      <!-- <div> -->
+      <h1 id="result">
+        Hasil : 0 %
+      </h1>
+      <!-- </div> -->
     </div>
     <div class="footer">
       <div class="kiri">
