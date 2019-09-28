@@ -3,14 +3,15 @@ function getInput() {
   var female = document.getElementById("female").value;
 
   if (!male || !female) {
-    alert("Input tidak boleh kosong!");
     return "kosong";
   }
 }
 
 function jodohin() {
   getInput();
-  if (getInput() !== "kosong") {
+  if (getInput() == "kosong") {
+    alert("Input tidak boleh kosong!");
+  } else {
     var batas = 100;
     var hasil = Math.floor(Math.random() * batas);
     if (hasil === 0) {
